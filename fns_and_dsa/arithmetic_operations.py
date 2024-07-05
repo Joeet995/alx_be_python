@@ -1,13 +1,13 @@
  
-def perform_operation(x, y, operation):
+def perform_operation(num1, num2, operation):
  if operation == "add":
-  result = x + y
+  result = num1 + num2
  elif operation == "subtract":
-  result = x - y
+  result = num1 - num2
  elif operation == "multiply":
-  result = x * y
+  result = num1 * num2
  elif operation == "divide":
-  if y == 0 : print("can not divied by zero")
-  result = x / y
+  if num2 == 0 : print("can not divied by zero")
+  result = num1 / num2
  else: print("not a valid input")
  return result
