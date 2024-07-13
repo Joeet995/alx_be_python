@@ -4,7 +4,7 @@ class Book:
         self.author = author
         self._is_checked_out = False
     
-    def checkout_book(self, book_title):
+    def check_out(self, book_title):
         if self.title == book_title:
             self._is_checked_out = True
             return True
@@ -31,7 +31,7 @@ class Library(Book):
 
     def checkout_book(self, book_title):
         self._books.remove(book_title)
-        self.checkout_book(book_title)
+        self.check_out(book_title)
 
     def return_book(self, book_title):
         self._books.append(book_title)
