@@ -2,7 +2,7 @@ import math
 
 class Shape:
     def area(self):
-        raise NotImplementedError
+        raise NotImplementedError("derived classed didn't override this method")
 
 class Rectangle(Shape):
     def __init__(self, length: int, width: int):
